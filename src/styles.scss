@@ -1,8 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~bootstrap/dist/css/bootstrap.min.css';
 @import "../src/assets/styles/main";
+@import '~bootstrap/dist/css/bootstrap.min.css';
 @import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Cormorant+Upright:wght@300&family=Fredericka+the+Great&family=Grape+Nuts&family=Noto+Sans&family=Patrick+Hand&family=Rancho&family=Rubik+Glitch&family=Rubik+Puddles&family=Space+Mono&display=swap');
 
 body{
-    background-color: var(--black);
+    background-color: var(--black) !important;
 }
