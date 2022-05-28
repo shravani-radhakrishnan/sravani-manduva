@@ -1,0 +1,35 @@
+.about-container{
+    height: 300px;
+    color: var(--white);
+    .row-1{
+        .left-col{
+            // margin: 0%;
+            // display: inline-block;
+            // vertical-align: middle;
+            text-align: center;
+            position: relative;
+            p{
+                letter-spacing: 10px;
+                font-size: 32px;
+                font-family: 'Patrick Hand', cursive;
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        .right-col{
+            // text-align: center;
+            position: relative;
+            div{
+                font-family: 'Space Mono', monospace;
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}

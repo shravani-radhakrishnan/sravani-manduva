@@ -4,6 +4,8 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { WorkComponent } from './work/work.component';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutComponent } from './about/about.component';
+import { SimplePdfViewerModule } from 'simple-pdf-viewer';
 const routes:Routes=[
   {
     path:'',
@@ -16,14 +18,21 @@ const routes:Routes=[
   {
     path:'work',
     component:WorkComponent
+  },
+  {
+    path:'about',
+    component:AboutComponent
   }
 ]
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    
+  ],
   imports: [
     CommonModule,
+    SimplePdfViewerModule,
     RouterModule.forChild(routes)
   ]
 })
