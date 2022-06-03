@@ -1,0 +1,31 @@
+.contact-container {
+    height: 400px;
+    font-family: 'Space Mono', monospace;
+
+    .main-row {
+        .mapContainer {
+            background-color: var(--corol);
+            position: relative;
+            iframe {
+                border-radius: 2%;
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .contactForm {
+            margin: auto;
+
+            div {
+                form {
+                    label {
+                        color: var(--white);
+                    }
+                }
+            }
+        }
+    }
+}

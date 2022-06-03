@@ -8,6 +8,10 @@ import { AboutComponent } from './modules/about/about.component';
 import { ContactComponent } from './modules/contact/contact.component';
 import { HomeComponent } from './modules/home/home.component';
 import { WorkComponent } from './modules/work/work.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogModule } from '@angular/material/dialog'; 
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -20,7 +24,10 @@ import { WorkComponent } from './modules/work/work.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SimplePdfViewerModule
+    SimplePdfViewerModule,
+    BrowserAnimationsModule,
+    MatDialogModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
