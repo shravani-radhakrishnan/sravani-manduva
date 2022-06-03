@@ -1,1 +1,47 @@
-<p>contact works!</p>
+<div class="contact-container col-12">
+    <div class="row h-100 main-row">
+        <div class="col-md-6 mapContainer">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.456205764461!2d-101.88649018484749!3d33.59346574921427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86fe12a5d3d58fa3%3A0x78fa088b16979b8f!2sRaiders%20Pass!5e0!3m2!1sen!2sus!4v1654104943566!5m2!1sen!2sus"
+                width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-md-6 contactForm">
+            <div class="row">
+                <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="col-md-12">
+                    <div class="row mb-2">
+                        <div class="form-group col-md-6">
+                            <label for="inputFirstName">First Name</label>
+                            <input type="text" class="form-control transparent-input" id="inputFirstName"
+                                formControlName="firstname">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputLastName">Last Name</label>
+                            <input type="text" class="form-control transparent-input" id="inputLastName"
+                                formControlName="lastname">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail">Email</label>
+                            <input type="email" class="form-control transparent-input" id="inputEmail"
+                                formControlName="email">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="mobile">Phone #1</label>
+                            <input type="text" class="form-control transparent-input" formControlName="mobile" id="mobile">
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="message">Message</label>
+                        <textarea type="text" class="form-control transparent-input" formControlName="message" id="message"></textarea>
+                    </div>
+                    <div class="form-group text-center">
+                        <button type="submit" class="btn theme-btn">Contact Me</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>

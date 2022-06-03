@@ -1,0 +1,35 @@
+.about-container{
+    height: 400px;
+    color: var(--white);
+    .row-1{
+        .left-col{
+            text-align: center;
+            div{
+                letter-spacing: 10px;
+                font-size: 32px;
+                font-family: 'Patrick Hand', cursive;
+            }
+        }
+        .right-col{
+            background-color: var(--corol);
+            color: var(--white);
+        }
+    }
+    
+}
+.resume-container{
+    height: 400px;
+    .row-2{
+        .left-col{
+
+        }
+        .right-col{
+            .btns-session{
+                button{
+                    color: var(--white);
+                    background-color: var(--corol);
+                }
+            }
+        }
+    }
+}
