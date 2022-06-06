@@ -1,0 +1,29 @@
+.theme-btn {
+    background-color: var(--corol) !important;
+    color: var(--white) !important;
+}
+
+input.transparent-input {
+    background-color: transparent !important;
+    color: var(--white);
+}
+.form-control:focus{
+    color: var(--white) !important;
+}
+
+textarea.transparent-input {
+    color: var(--white);
+    background-color: transparent !important;
+}
+
+.box-center {
+    position: relative;
+    div {
+        font-family: 'Space Mono', monospace;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
