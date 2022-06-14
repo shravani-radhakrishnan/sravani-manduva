@@ -6,6 +6,7 @@ import { WorkComponent } from './work/work.component';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { SimplePdfViewerModule } from 'simple-pdf-viewer';
+import { FooterComponent } from './footer/footer.component';
 const routes:Routes=[
   {
     path:'',
@@ -22,6 +23,10 @@ const routes:Routes=[
   {
     path:'about',
     component:AboutComponent
+  },
+  {
+    path:'footer',
+    component:FooterComponent
   }
 ]
 
