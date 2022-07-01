@@ -23,20 +23,18 @@ export class ContactComponent implements OnInit {
   }
   // This function is used to submit the form values
   onSubmit(){
-    this.submitted = true;
     let invalidControls = this.findInvalidControls()
     console.log(invalidControls)
     if (this.contactForm.invalid) {
-      // for(let i=0;i<invalidControls?.length;i++){
-
-      // }
      return
     } else {
+      this.submitted = true;
       console.log('form submitted');
       $('button p').text(function(i, text) {
         $('#clickMe').toggleClass('clicked');
         return text === "Sent!" ? "Send" : "Sent!";
       });
+      this.contactForm.reset();
     }
   }
 
