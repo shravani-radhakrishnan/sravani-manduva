@@ -1,12 +1,7 @@
 <div class="contact-container col-12">
     <div class="row h-100 main-row">
-        <div class="col-md-6 mapContainer">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.456205764461!2d-101.88649018484749!3d33.59346574921427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86fe12a5d3d58fa3%3A0x78fa088b16979b8f!2sRaiders%20Pass!5e0!3m2!1sen!2sus!4v1654104943566!5m2!1sen!2sus"
-                width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="col-md-6 contactForm">
+        <div class="col-md-6 contactForm ps-4 pe-0">
+            <h2 class="w-100 text-end white-clr py-4">Keep In</h2>
             <div class="row">
                 <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="col-md-12">
                     <div class="row mb-2">
@@ -37,11 +32,26 @@
                         <textarea type="text" class="form-control transparent-input" formControlName="message" id="message"></textarea>
                     </div>
                     <div class="form-group text-center">
-                        <button type="submit" class="btn theme-btn">Contact Me</button>
+                        
+                        <button id="clickMe">
+                            <p id="btntext">Send</p>
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                              <path id="paper-plane-icon" d="M462,54.955L355.371,437.187l-135.92-128.842L353.388,167l-179.53,124.074L50,260.973L462,54.955z
+                          M202.992,332.528v124.517l58.738-67.927L202.992,332.528z"></path> 
+                            </svg>
+                          </button>
                     </div>
                 </form>
             </div>
-
+        </div>
+        <div class="col-md-6 mapContainer">
+            <h2 class="w-100 white-clr py-4">Touch</h2>
+            <div>
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.456205764461!2d-101.88649018484749!3d33.59346574921427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86fe12a5d3d58fa3%3A0x78fa088b16979b8f!2sRaiders%20Pass!5e0!3m2!1sen!2sus!4v1654104943566!5m2!1sen!2sus"
+                width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
     </div>
 </div>
