@@ -13,6 +13,11 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormGroup, FormControl, Validators } from '@angular/forms'
 import { FooterComponent } from './modules/footer/footer.component';
+import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { BlogComponent } from './modules/blog/blog.component';
+import { SharedService } from './modules/shared.service';
+import { SharedModule } from './modules/shared.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +26,8 @@ import { FooterComponent } from './modules/footer/footer.component';
     HomeComponent,
     WorkComponent,
     AboutComponent,
-    FooterComponent
+    FooterComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
@@ -29,9 +35,11 @@ import { FooterComponent } from './modules/footer/footer.component';
     SimplePdfViewerModule,
     BrowserAnimationsModule,
     MatDialogModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxPageScrollCoreModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [SharedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
