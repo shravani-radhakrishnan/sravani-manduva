@@ -1,0 +1,29 @@
+<div class="blogContainer">
+    <div class="col-12">
+        <div class="row" id="header">
+            
+        </div>
+        <div class="row" id="body">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 ps-4" *ngFor="let blog of bloginfo">
+                        <div class="card mb-3 bg-coral white-clr" style="max-width: 540px;">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="[[blog.image_url]" class="img-fluid rounded-start" alt={{blog.alt_text}}>
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">{{blog.title}}</h5>
+                                  <p class="card-text limit">{{blog.body}}</p>
+                                  <p class="card-text"><small class="text-muted"><a>Continue Reading...</a></small></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -22,10 +22,10 @@
                 <div class="menu">
                     <ul>
                        <li><a href="#">Home</a></li>
-                       <li><a href="#">Work</a></li>
-                       <li><a href="#">About</a></li>
+                       <li><a pageScrollTarget href="#work">Work</a></li>
+                       <li><a pageScrollTarget href="#about">About</a></li>
                        <li><a href="#">Blogs</a></li>
-                       <li><a href="#">Contact</a></li>
+                       <li><a pageScrollTarget href="#contact">Contact</a></li>
                     </ul>
                  </div>
             </nav>
@@ -37,7 +37,10 @@
         </div>
     </div>
 </div>
-<app-work></app-work>
-<app-about></app-about>
-<app-contact></app-contact>
+<div #target>
+Hello
+</div>
+<app-work id="work"></app-work>
+<app-about id="about"></app-about>
+<app-contact id="contact"></app-contact>
 <app-footer></app-footer>

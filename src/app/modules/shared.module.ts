@@ -7,6 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { SimplePdfViewerModule } from 'simple-pdf-viewer';
 import { FooterComponent } from './footer/footer.component';
+import { BlogComponent } from './blog/blog.component';
 const routes:Routes=[
   {
     path:'',
@@ -27,6 +28,10 @@ const routes:Routes=[
   {
     path:'footer',
     component:FooterComponent
+  },
+  {
+    path:'blog',
+    component:BlogComponent
   }
 ]
 
